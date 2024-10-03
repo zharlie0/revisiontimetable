@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision timetable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mainbox"></div>
+    <div class="timerow"></div>
+    <div class="daycolumn"></div>
+    <div class="day1"></div>
+    <div class="day2"></div>
+    <div class="day3"></div>
+    <div class="day4"></div>
+    <div class="day5"></div>
+    <div class="day6"></div>
+    <div class="day7"></div>
+    <div class="time1"></div>
+    <div class="time2"></div>
+    <div class="time3"></div>
+    <div class="time4"></div>
+    <div class="time5"></div>
+    <div class="time6"></div>
+    <div class="time7"></div>
+    <div class="time8"></div>
+
+<div class="dayss">
+    <div id="mon">MON</div>
+    <div id="tue">TUE</div>
+    <div id="wed">WED</div>
+    <div id="thu">THU</div>
+    <div id="fri">FRI</div>
+    <div id="sat">SAT</div>
+    <div id="sun">SUN</div>
+</div>
+
+<select id="timeselect1" style="position: relative;left: 240px; height: 26.5px; top:2px">
+        <option value=8>8:00</option>
+        <option value=9>9:00</option>
+        <option value=10>10:00</option>
+        <option value=11>11:00</option>
+        <option value=12>12:00</option>
+        <option value=13>13:00</option>
+        <option value=14>14:00</option>
+        <option value=15>15:00</option>
+        <option value=16>16:00</option>
+        <option value=17>17:00</option>
+        <option value=18>18:00</option>
+        <option value=19>19:00</option>
+        <option value=20>20:00</option>
+        <option value=21>21:00</option>
+        <option value=22>22:00</option>
+</select>
+<select id="timeselect2" onchange="gettime()"  style="position: relative;left: 238.1px;height: 26.5px; top: 2px;">
+        <option value=8>8:00</option>
+        <option value=9>9:00</option>
+        <option value=10>10:00</option>
+        <option value=11>11:00</option>
+        <option value=12>12:00</option>
+        <option value=13>13:00</option>
+        <option value=14>14:00</option>
+        <option value=15>15:00</option>
+        <option value=16>16:00</option>
+        <option value=17>17:00</option>
+        <option value=18>18:00</option>
+        <option value=19>19:00</option>
+        <option value=20>20:00</option>
+        <option value=21>21:00</option>
+        <option value=22>22:00</option>
+</select>
+
+<div class="colours" style="position: relative; left: 357px; ">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour2">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour3">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour4">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour5">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour6">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour7">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour8">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour9">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour10">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour11">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour12">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour13">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour14">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour15">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour16">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour17">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour18">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour19">
+    <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour20">
+</div>
+
+<div class="texts"  style="position: relative;left: 410px;">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text2">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text3">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text4">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text5">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text6">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text7">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text8">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text9">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text10">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text11">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text12">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text13">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text14">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text15">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text16">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text17">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text18">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text19">
+    <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text20">
+</div>
+
+<div class="timevals">
+    <div id="timeval"><h2></h2></div>
+    <div id="timeval2"><h2></h2></div>
+    <div id="timeval3"><h2></h2></div>
+    <div id="timeval4"><h2></h2></div>
+    <div id="timeval5"><h2></h2></div>
+    <div id="timeval6"><h2></h2></div>
+    <div id="timeval7"><h2></h2></div>
+    <div id="timeval8"><h2></h2></div>
+    <div id="timeval9"><h2></h2></div>
+    <div id="timeval10"><h2></h2></div>
+    <div id="timeval11"><h2></h2></div>
+    <div id="timeval12"><h2></h2></div>
+    <div id="timeval13"><h2></h2></div>
+    <div id="timeval14"><h2></h2></div>
+    <div id="timeval15"><h2></h2></div>
+    <div id="timeval16"><h2></h2></div>
+    <div id="timeval17"><h2></h2></div>
+    <div id="timeval18"><h2></h2></div>
+    <div id="timeval19"><h2></h2></div>
+    <div id="timeval20"><h2></h2></div>
+</div>
+
+    <select id="dateselect" onchange="gettime()" style="position: relative;top: -25px; left: 590px;height: 27px">
+        <option value = 1>Monday</option>
+        <option value = 2>Tuesday</option>
+        <option value = 3>Wednesday</option>
+        <option value = 4>Thursday</option>
+        <option value = 5>Friday</option>
+        <option value = 6>Saturday</option>
+        <option value = 7>Sunday</option>
+    </select>
+
+    <button style="position: relative; left: 100px" id="btn" onclick="enter()">Make New Event</button>
+    <button style="position: relative; left: 98px" id="makeconst" onclick="makeconst()">Save Events</button>
+    <button style="position: relative; left: 96px" id="removeconst" onclick="removeconst()">Remove Saved Events</button>
+    <button style="position: relative; left: 94px" id="perform" onclick="perform()">Execute Previous Events</button>
+  <div id="output"></div>
+  <div id="white1"></div>
+  <div id="white2"></div>
+
+<p class="title">REVISION TIMETABLE</p>
+<p id="errors"></p>
+    <p id="test" style="position: relative; top: 700px;"></p>
+
+    <p style="font-size: larger; font-weight: 1000; background-color: white; position: absolute; top: 200px; left: 170px">10:00</p>
+    <p style="font-size: larger; font-weight: 1000; background-color: white; position: absolute; top: 200px; left: 300px">12:00</p>
+    <p style="font-size: larger; font-weight: 1000; background-color: white; position: absolute; top: 200px; left: 430px">14:00</p>
+    <p style="font-size: larger; font-weight: 1000; background-color: white; position: absolute; top: 200px; left: 560px">16:00</p>
+    <p style="font-size: larger; font-weight: 1000; background-color: white; position: absolute; top: 200px; left: 690px">18:00</p>
+    <p style="font-size: larger; font-weight: 1000; background-color: white; position: absolute; top: 200px; left: 820px">20:00</p>
+    <script src="index.js"></script>
+</body>
+</html>
