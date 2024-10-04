@@ -15,6 +15,12 @@ let filehandle;
 const date = new Date();
 let day = date.getDay();
 
+const time = new Date();
+let timer = time.getMinutes();
+
+const time2 = new Date();
+let hour = time2.getHours();
+
 let counter = 1;
 
     function values(){
@@ -852,4 +858,16 @@ function perform(){
         document.getElementById('errors').style.left = "300px"
         document.getElementById('errors').textContent = "error: There are no events saved on this computer"
     }
+
+        let dayinpx = day * 55
+        document.getElementById('timep').style.backgroundColor = 'red';
+        document.getElementById('timep').style.top = `${dayinpx + 210}px`
+    
+        let timevalue = timer * 1.125;
+        hourinpx = (hour - 8) * 65
+        document.getElementById('timep').style.left = `${timevalue + hourinpx + 68}px`
+        console.log(hourinpx)
+
+  
+  
 }

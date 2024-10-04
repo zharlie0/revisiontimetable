@@ -210,3 +210,12 @@
     position: absolute; top: 590px; left:6px;
     font-size: x-large;
  }
+
+
+#timep{
+    width: 3px;
+    height: 40px;
+    background-color: white;
+    position: absolute; top: 320px; left: 68px;
+    z-index: 3;
+}

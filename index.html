@@ -71,7 +71,7 @@
         <option value=22>22:00</option>
 </select>
 
-<div class="colours" style="position: relative; left: 357px; ">
+<div class="colours" onchange="gettime()" style="position: relative; left: 357px; ">
     <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour">
     <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour2">
     <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour3">
@@ -94,7 +94,7 @@
     <input type="color" style="position: fixed; top: 10px; z-index: 1; height:26px" id="colour20">
 </div>
 
-<div class="texts"  style="position: relative;left: 410px;">
+<div class="texts" oninput="gettime()" style="position: relative;left: 410px;">
     <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text">
     <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text2">
     <input type="text" style="position: fixed; top: 10px; z-index: 1; height: 20px;" id="text3">
@@ -157,6 +157,8 @@
   <div id="output"></div>
   <div id="white1"></div>
   <div id="white2"></div>
+
+  <DIV id="timep"></DIV>
 
 <p class="title">REVISION TIMETABLE</p>
 <p id="errors"></p>
