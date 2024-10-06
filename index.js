@@ -21,8 +21,6 @@ let timer = time.getMinutes();
 const time2 = new Date();
 let hour = time2.getHours();
 
-const timevalss = [document.getElementById('timeval'), document.getElementById('timeval2'), document.getElementById('timeval3'), document.getElementById('timeval4'), document.getElementById('timeval5'), document.getElementById('timeval6'), document.getElementById('timeval7'), document.getElementById('timeval8'), document.getElementById('timeval9'), document.getElementById('timeval10'), document.getElementById('timeval11'), document.getElementById('timeval12'), document.getElementById('timeval13'), document.getElementById('timeval14'), document.getElementById('timeval15'), document.getElementById('timeval16'), document.getElementById('timeval17'), document.getElementById('timeval18'), document.getElementById('timeval19'), document.getElementById('timeval20'), document.getElementById('timeval21'), document.getElementById('timeval22'), document.getElementById('timeval23'), document.getElementById('timeval24'), document.getElementById('timeval25'), document.getElementById('timeval26'), document.getElementById('timeval27'), document.getElementById('timeval28'), document.getElementById('timeval29'), document.getElementById('timeval30')] 
-
 let counter = 1;
 
     function values(){
@@ -121,7 +119,7 @@ if (x == 12){
     one.style.left = "324px"
 }
 if (x == 13){
-    one.style.left = "387.5px"
+    one.style.left = "390px"
 }
 if (x == 14){
     one.style.left = "455px"
@@ -325,6 +323,76 @@ function gettime(){
         document.getElementById('text20').style.zIndex = "2"
         document.getElementById('timeval20').textContent = document.getElementById('text20').value
     }
+    else if (counter == 21){
+        values(one = document.getElementById('timeval21'))
+        document.getElementById('colour21').style.zIndex = "2"
+        document.getElementById('timeval21').style.backgroundColor = document.getElementById('colour21').value
+        document.getElementById('text21').style.zIndex = "2"
+        document.getElementById('timeval21').textContent = document.getElementById('text21').value
+    }
+    else if (counter == 22){
+        values(one = document.getElementById('timeval22'))
+        document.getElementById('colour22').style.zIndex = "2"
+        document.getElementById('timeval22').style.backgroundColor = document.getElementById('colour22').value
+        document.getElementById('text22').style.zIndex = "2"
+        document.getElementById('timeval22').textContent = document.getElementById('text22').value
+    }
+    else if (counter == 23){
+        values(one = document.getElementById('timeval23'))
+        document.getElementById('colour23').style.zIndex = "2"
+        document.getElementById('timeval23').style.backgroundColor = document.getElementById('colour23').value
+        document.getElementById('text23').style.zIndex = "2"
+        document.getElementById('timeval23').textContent = document.getElementById('text23').value
+    }
+    else if (counter == 24){
+        values(one = document.getElementById('timeval24'))
+        document.getElementById('colour24').style.zIndex = "2"
+        document.getElementById('timeval24').style.backgroundColor = document.getElementById('colour24').value
+        document.getElementById('text24').style.zIndex = "2"
+        document.getElementById('timeval24').textContent = document.getElementById('text24').value
+    }
+    else if (counter == 25){
+        values(one = document.getElementById('timeval25'))
+        document.getElementById('colour25').style.zIndex = "2"
+        document.getElementById('timeval25').style.backgroundColor = document.getElementById('colour25').value
+        document.getElementById('text25').style.zIndex = "2"
+        document.getElementById('timeval25').textContent = document.getElementById('text25').value
+    }
+    else if (counter == 26){
+        values(one = document.getElementById('timeval26'))
+        document.getElementById('colour26').style.zIndex = "2"
+        document.getElementById('timeval26').style.backgroundColor = document.getElementById('colour26').value
+        document.getElementById('text26').style.zIndex = "2"
+        document.getElementById('timeval26').textContent = document.getElementById('text26').value
+    }
+    else if (counter == 27){
+        values(one = document.getElementById('timeval27'))
+        document.getElementById('colour27').style.zIndex = "2"
+        document.getElementById('timeval27').style.backgroundColor = document.getElementById('colour27').value
+        document.getElementById('text27').style.zIndex = "2"
+        document.getElementById('timeval27').textContent = document.getElementById('text27').value
+    }
+    else if (counter == 28){
+        values(one = document.getElementById('timeval28'))
+        document.getElementById('colour28').style.zIndex = "2"
+        document.getElementById('timeval28').style.backgroundColor = document.getElementById('colour28').value
+        document.getElementById('text28').style.zIndex = "2"
+        document.getElementById('timeval28').textContent = document.getElementById('text28').value
+    }
+    else if (counter == 29){
+        values(one = document.getElementById('timeval29'))
+        document.getElementById('colour29').style.zIndex = "2"
+        document.getElementById('timeval29').style.backgroundColor = document.getElementById('colour29').value
+        document.getElementById('text29').style.zIndex = "2"
+        document.getElementById('timeval29').textContent = document.getElementById('text29').value
+    }
+    else if (counter == 30){
+        values(one = document.getElementById('timeval30'))
+        document.getElementById('colour30').style.zIndex = "2"
+        document.getElementById('timeval30').style.backgroundColor = document.getElementById('colour30').value
+        document.getElementById('text30').style.zIndex = "2"
+        document.getElementById('timeval30').textContent = document.getElementById('text30').value
+    }
     else {
         values();
     }
@@ -351,6 +419,16 @@ function makeconst(){
         length18 :document.getElementById('timeval18').style.width, day18: document.getElementById('timeval18').style.top, time18: document.getElementById('timeval18').style.left, colour18: document.getElementById('colour18').value, text18: document.getElementById('text18').value,
         length19 :document.getElementById('timeval19').style.width, day19: document.getElementById('timeval19').style.top, time19: document.getElementById('timeval19').style.left, colour19: document.getElementById('colour19').value, text19: document.getElementById('text19').value,
         length20 :document.getElementById('timeval20').style.width, day20: document.getElementById('timeval20').style.top, time20: document.getElementById('timeval20').style.left, colour20: document.getElementById('colour20').value, text20: document.getElementById('text20').value,
+        length21 :document.getElementById('timeval21').style.width, day21: document.getElementById('timeval21').style.top, time21: document.getElementById('timeval21').style.left, colour21: document.getElementById('colour21').value, text21: document.getElementById('text21').value,
+        length22 :document.getElementById('timeval22').style.width, day22: document.getElementById('timeval22').style.top, time22: document.getElementById('timeval22').style.left, colour22: document.getElementById('colour22').value, text22: document.getElementById('text22').value,
+        length23 :document.getElementById('timeval23').style.width, day23: document.getElementById('timeval23').style.top, time23: document.getElementById('timeval23').style.left, colour23: document.getElementById('colour23').value, text23: document.getElementById('text23').value,
+        length24 :document.getElementById('timeval24').style.width, day24: document.getElementById('timeval24').style.top, time24: document.getElementById('timeval24').style.left, colour24: document.getElementById('colour24').value, text24: document.getElementById('text24').value,
+        length25 :document.getElementById('timeval25').style.width, day25: document.getElementById('timeval25').style.top, time25: document.getElementById('timeval25').style.left, colour25: document.getElementById('colour25').value, text25: document.getElementById('text25').value,
+        length26 :document.getElementById('timeval26').style.width, day26: document.getElementById('timeval26').style.top, time26: document.getElementById('timeval26').style.left, colour26: document.getElementById('colour26').value, text26: document.getElementById('text26').value,
+        length27 :document.getElementById('timeval27').style.width, day27: document.getElementById('timeval27').style.top, time27: document.getElementById('timeval27').style.left, colour27: document.getElementById('colour27').value, text27: document.getElementById('text27').value,
+        length28 :document.getElementById('timeval28').style.width, day28: document.getElementById('timeval28').style.top, time28: document.getElementById('timeval28').style.left, colour28: document.getElementById('colour28').value, text28: document.getElementById('text28').value,
+        length29 :document.getElementById('timeval29').style.width, day29: document.getElementById('timeval29').style.top, time29: document.getElementById('timeval29').style.left, colour29: document.getElementById('colour29').value, text29: document.getElementById('text29').value,
+        length30 :document.getElementById('timeval30').style.width, day30: document.getElementById('timeval30').style.top, time30: document.getElementById('timeval30').style.left, colour30: document.getElementById('colour30').value, text30: document.getElementById('text30').value,
 
     };
     localStorage.setItem('key1', valuez.length1)
@@ -472,6 +550,66 @@ function makeconst(){
     localStorage.setItem('key320', valuez.time20)
     localStorage.setItem('key420', valuez.colour20)
     localStorage.setItem('key520', valuez.text20)
+
+    localStorage.setItem('key121', valuez.length21)
+    localStorage.setItem('key221', valuez.day21)
+    localStorage.setItem('key321', valuez.time21)
+    localStorage.setItem('key421', valuez.colour21)
+    localStorage.setItem('key521', valuez.text21)
+
+    localStorage.setItem('key122', valuez.length22)
+    localStorage.setItem('key222', valuez.day22)
+    localStorage.setItem('key322', valuez.time22)
+    localStorage.setItem('key422', valuez.colour22)
+    localStorage.setItem('key522', valuez.text22)
+
+    localStorage.setItem('key123', valuez.length23)
+    localStorage.setItem('key223', valuez.day23)
+    localStorage.setItem('key323', valuez.time23)
+    localStorage.setItem('key423', valuez.colour23)
+    localStorage.setItem('key523', valuez.text23)
+
+    localStorage.setItem('key124', valuez.length24)
+    localStorage.setItem('key224', valuez.day24)
+    localStorage.setItem('key324', valuez.time24)
+    localStorage.setItem('key424', valuez.colour24)
+    localStorage.setItem('key524', valuez.text24)
+
+    localStorage.setItem('key125', valuez.length25)
+    localStorage.setItem('key225', valuez.day25)
+    localStorage.setItem('key325', valuez.time25)
+    localStorage.setItem('key425', valuez.colour25)
+    localStorage.setItem('key525', valuez.text25)
+
+    localStorage.setItem('key126', valuez.length26)
+    localStorage.setItem('key226', valuez.day26)
+    localStorage.setItem('key326', valuez.time26)
+    localStorage.setItem('key426', valuez.colour26)
+    localStorage.setItem('key526', valuez.text26)
+
+    localStorage.setItem('key127', valuez.length27)
+    localStorage.setItem('key227', valuez.day27)
+    localStorage.setItem('key327', valuez.time27)
+    localStorage.setItem('key427', valuez.colour27)
+    localStorage.setItem('key527', valuez.text27)
+
+    localStorage.setItem('key128', valuez.length28)
+    localStorage.setItem('key228', valuez.day28)
+    localStorage.setItem('key328', valuez.time28)
+    localStorage.setItem('key428', valuez.colour28)
+    localStorage.setItem('key528', valuez.text28)
+
+    localStorage.setItem('key129', valuez.length29)
+    localStorage.setItem('key229', valuez.day29)
+    localStorage.setItem('key329', valuez.time29)
+    localStorage.setItem('key429', valuez.colour29)
+    localStorage.setItem('key529', valuez.text29)
+
+    localStorage.setItem('key130', valuez.length30)
+    localStorage.setItem('key230', valuez.day30)
+    localStorage.setItem('key330', valuez.time30)
+    localStorage.setItem('key430', valuez.colour30)
+    localStorage.setItem('key530', valuez.text30)
     console.log(localStorage)
 
         document.getElementById('errors').style.left = "320px"
@@ -479,82 +617,7 @@ function makeconst(){
 
 }
 
-function getconst(){
-localStorage.getItem('key1') 
-localStorage.getItem('key2') 
-localStorage.getItem('key3') 
-localStorage.getItem('key4') 
-localStorage.getItem('key5') 
 
-localStorage.getItem('key12') 
-localStorage.getItem('key22') 
-localStorage.getItem('key32') 
-localStorage.getItem('key42') 
-localStorage.getItem('key52') 
-
-localStorage.getItem('key13') 
-localStorage.getItem('key23') 
-localStorage.getItem('key33') 
-localStorage.getItem('key43') 
-localStorage.getItem('key53') 
-
-localStorage.getItem('key14') 
-localStorage.getItem('key24') 
-localStorage.getItem('key34') 
-localStorage.getItem('key44') 
-localStorage.getItem('key54') 
-
-localStorage.getItem('key15') 
-localStorage.getItem('key25') 
-localStorage.getItem('key35') 
-localStorage.getItem('key45') 
-localStorage.getItem('key55') 
-
-localStorage.getItem('key16') 
-localStorage.getItem('key26') 
-localStorage.getItem('key36') 
-localStorage.getItem('key46') 
-localStorage.getItem('key56') 
-
-localStorage.getItem('key17') 
-localStorage.getItem('key27') 
-localStorage.getItem('key37') 
-localStorage.getItem('key47') 
-localStorage.getItem('key57') 
-
-localStorage.getItem('key18')
-localStorage.getItem('key28')
-localStorage.getItem('key38')
-localStorage.getItem('key48')
-localStorage.getItem('key58')
-
-localStorage.getItem('key19')
-localStorage.getItem('key29')
-localStorage.getItem('key39')
-localStorage.getItem('key49')
-localStorage.getItem('key59')
-
-localStorage.getItem('key110')
-localStorage.getItem('key210')
-localStorage.getItem('key310')
-localStorage.getItem('key410')
-localStorage.getItem('key510')
-
-localStorage.getItem('key111')
-localStorage.getItem('key211')
-localStorage.getItem('key311')
-localStorage.getItem('key411')
-localStorage.getItem('key511')
-
-localStorage.getItem('key112')
-localStorage.getItem('key212')
-localStorage.getItem('key312')
-localStorage.getItem('key412')
-localStorage.getItem('key512')
-
-    
-    console.log(localStorage)
-}
 
 function removeconst(){
     localStorage.removeItem('key1') 
@@ -628,6 +691,114 @@ localStorage.removeItem('key212')
 localStorage.removeItem('key312')
 localStorage.removeItem('key412')
 localStorage.removeItem('key512')
+
+localStorage.removeItem('key113')
+localStorage.removeItem('key213')
+localStorage.removeItem('key313')
+localStorage.removeItem('key413')
+localStorage.removeItem('key513')
+
+localStorage.removeItem('key114')
+localStorage.removeItem('key214')
+localStorage.removeItem('key314')
+localStorage.removeItem('key414')
+localStorage.removeItem('key514')
+
+localStorage.removeItem('key115')
+localStorage.removeItem('key215')
+localStorage.removeItem('key315')
+localStorage.removeItem('key415')
+localStorage.removeItem('key515')
+
+localStorage.removeItem('key116')
+localStorage.removeItem('key216')
+localStorage.removeItem('key316')
+localStorage.removeItem('key416')
+localStorage.removeItem('key516')
+
+localStorage.removeItem('key117')
+localStorage.removeItem('key217')
+localStorage.removeItem('key317')
+localStorage.removeItem('key417')
+localStorage.removeItem('key517')
+
+localStorage.removeItem('key118')
+localStorage.removeItem('key218')
+localStorage.removeItem('key318')
+localStorage.removeItem('key418')
+localStorage.removeItem('key518')
+
+localStorage.removeItem('key119')
+localStorage.removeItem('key219')
+localStorage.removeItem('key319')
+localStorage.removeItem('key419')
+localStorage.removeItem('key519')
+
+localStorage.removeItem('key120')
+localStorage.removeItem('key220')
+localStorage.removeItem('key320')
+localStorage.removeItem('key420')
+localStorage.removeItem('key520')
+
+localStorage.removeItem('key121')
+localStorage.removeItem('key221')
+localStorage.removeItem('key321')
+localStorage.removeItem('key421')
+localStorage.removeItem('key521')
+
+localStorage.removeItem('key122')
+localStorage.removeItem('key222')
+localStorage.removeItem('key322')
+localStorage.removeItem('key422')
+localStorage.removeItem('key522')
+
+localStorage.removeItem('key123')
+localStorage.removeItem('key223')
+localStorage.removeItem('key323')
+localStorage.removeItem('key423')
+localStorage.removeItem('key523')
+
+localStorage.removeItem('key124')
+localStorage.removeItem('key224')
+localStorage.removeItem('key324')
+localStorage.removeItem('key424')
+localStorage.removeItem('key524')
+
+localStorage.removeItem('key125')
+localStorage.removeItem('key225')
+localStorage.removeItem('key325')
+localStorage.removeItem('key425')
+localStorage.removeItem('key525')
+
+localStorage.removeItem('key126')
+localStorage.removeItem('key226')
+localStorage.removeItem('key326')
+localStorage.removeItem('key426')
+localStorage.removeItem('key526')
+
+localStorage.removeItem('key127')
+localStorage.removeItem('key227')
+localStorage.removeItem('key327')
+localStorage.removeItem('key427')
+localStorage.removeItem('key527')
+
+localStorage.removeItem('key128')
+localStorage.removeItem('key228')
+localStorage.removeItem('key328')
+localStorage.removeItem('key428')
+localStorage.removeItem('key528')
+
+localStorage.removeItem('key129')
+localStorage.removeItem('key229')
+localStorage.removeItem('key329')
+localStorage.removeItem('key429')
+localStorage.removeItem('key529')
+
+localStorage.removeItem('key130')
+localStorage.removeItem('key230')
+localStorage.removeItem('key330')
+localStorage.removeItem('key430')
+localStorage.removeItem('key530')
     console.log(localStorage)
 
 }
@@ -774,6 +945,76 @@ function perform(){
     document.getElementById('timeval20').textContent = localStorage.key520
     document.getElementById('timeval20').style.height = "50px"
 
+    document.getElementById('timeval21').style.width = localStorage.key121
+    document.getElementById('timeval21').style.top = localStorage.key221
+    document.getElementById('timeval21').style.left = localStorage.key321
+    document.getElementById('timeval21').style.backgroundColor = localStorage.key421
+    document.getElementById('timeval21').textContent = localStorage.key521
+    document.getElementById('timeval21').style.height = "50px"
+
+    document.getElementById('timeval22').style.width = localStorage.key122
+    document.getElementById('timeval22').style.top = localStorage.key222
+    document.getElementById('timeval22').style.left = localStorage.key322
+    document.getElementById('timeval22').style.backgroundColor = localStorage.key422
+    document.getElementById('timeval22').textContent = localStorage.key522
+    document.getElementById('timeval22').style.height = "50px"
+
+    document.getElementById('timeval23').style.width = localStorage.key123
+    document.getElementById('timeval23').style.top = localStorage.key223
+    document.getElementById('timeval23').style.left = localStorage.key323
+    document.getElementById('timeval23').style.backgroundColor = localStorage.key423
+    document.getElementById('timeval23').textContent = localStorage.key523
+    document.getElementById('timeval23').style.height = "50px"
+
+    document.getElementById('timeval24').style.width = localStorage.key124
+    document.getElementById('timeval24').style.top = localStorage.key224
+    document.getElementById('timeval24').style.left = localStorage.key324
+    document.getElementById('timeval24').style.backgroundColor = localStorage.key424
+    document.getElementById('timeval24').textContent = localStorage.key524
+    document.getElementById('timeval24').style.height = "50px"
+
+    document.getElementById('timeval25').style.width = localStorage.key125
+    document.getElementById('timeval25').style.top = localStorage.key225
+    document.getElementById('timeval25').style.left = localStorage.key325
+    document.getElementById('timeval25').style.backgroundColor = localStorage.key425
+    document.getElementById('timeval25').textContent = localStorage.key525
+    document.getElementById('timeval25').style.height = "50px"
+
+    document.getElementById('timeval26').style.width = localStorage.key126
+    document.getElementById('timeval26').style.top = localStorage.key226
+    document.getElementById('timeval26').style.left = localStorage.key326
+    document.getElementById('timeval26').style.backgroundColor = localStorage.key426
+    document.getElementById('timeval26').textContent = localStorage.key526
+    document.getElementById('timeval26').style.height = "50px"
+
+    document.getElementById('timeval27').style.width = localStorage.key127
+    document.getElementById('timeval27').style.top = localStorage.key227
+    document.getElementById('timeval27').style.left = localStorage.key327
+    document.getElementById('timeval27').style.backgroundColor = localStorage.key427
+    document.getElementById('timeval27').textContent = localStorage.key527
+    document.getElementById('timeval27').style.height = "50px"
+
+    document.getElementById('timeval28').style.width = localStorage.key128
+    document.getElementById('timeval28').style.top = localStorage.key228
+    document.getElementById('timeval28').style.left = localStorage.key328
+    document.getElementById('timeval28').style.backgroundColor = localStorage.key428
+    document.getElementById('timeval28').textContent = localStorage.key528
+    document.getElementById('timeval28').style.height = "50px"
+
+    document.getElementById('timeval29').style.width = localStorage.key129
+    document.getElementById('timeval29').style.top = localStorage.key229
+    document.getElementById('timeval29').style.left = localStorage.key329
+    document.getElementById('timeval29').style.backgroundColor = localStorage.key429
+    document.getElementById('timeval29').textContent = localStorage.key529
+    document.getElementById('timeval29').style.height = "50px"
+
+    document.getElementById('timeval30').style.width = localStorage.key130
+    document.getElementById('timeval30').style.top = localStorage.key230
+    document.getElementById('timeval30').style.left = localStorage.key330
+    document.getElementById('timeval30').style.backgroundColor = localStorage.key430
+    document.getElementById('timeval30').textContent = localStorage.key530
+    document.getElementById('timeval30').style.height = "50px"
+
 
     if (document.getElementById('timeval').style.backgroundColor == "rgb(0, 0, 0)"){
         document.getElementById('timeval').style.width = "0px"
@@ -854,6 +1095,46 @@ function perform(){
     if (document.getElementById('timeval20').style.backgroundColor == "rgb(0, 0, 0)"){
         document.getElementById('timeval20').style.width = "0px"
         document.getElementById('timeval20').style.border = "0px solid white"
+    }
+    if (document.getElementById('timeval21').style.backgroundColor == "rgb(0, 0, 0)"){
+        document.getElementById('timeval21').style.width = "0px"
+        document.getElementById('timeval21').style.border = "0px solid white"
+    }
+    if (document.getElementById('timeval22').style.backgroundColor == "rgb(0, 0, 0)"){
+        document.getElementById('timeval22').style.width = "0px"
+        document.getElementById('timeval22').style.border = "0px solid white"
+    }
+    if (document.getElementById('timeval23').style.backgroundColor == "rgb(0, 0, 0)"){
+        document.getElementById('timeval23').style.width = "0px"
+        document.getElementById('timeval23').style.border = "0px solid white"
+    }
+    if (document.getElementById('timeval24').style.backgroundColor == "rgb(0, 0, 0)"){
+        document.getElementById('timeval24').style.width = "0px"
+        document.getElementById('timeval24').style.border = "0px solid white"
+    }
+    if (document.getElementById('timeval25').style.backgroundColor == "rgb(0, 0, 0)"){
+        document.getElementById('timeval25').style.width = "0px"
+        document.getElementById('timeval25').style.border = "0px solid white"
+    }
+    if (document.getElementById('timeval26').style.backgroundColor == "rgb(0, 0, 0)"){
+        document.getElementById('timeval26').style.width = "0px"
+        document.getElementById('timeval26').style.border = "0px solid white"
+    }
+    if (document.getElementById('timeval27').style.backgroundColor == "rgb(0, 0, 0)"){
+        document.getElementById('timeval27').style.width = "0px"
+        document.getElementById('timeval27').style.border = "0px solid white"
+    }
+    if (document.getElementById('timeval28').style.backgroundColor == "rgb(0, 0, 0)"){
+        document.getElementById('timeval28').style.width = "0px"
+        document.getElementById('timeval28').style.border = "0px solid white"
+    }
+    if (document.getElementById('timeval29').style.backgroundColor == "rgb(0, 0, 0)"){
+        document.getElementById('timeval29').style.width = "0px"
+        document.getElementById('timeval29').style.border = "0px solid white"
+    }
+    if (document.getElementById('timeval30').style.backgroundColor == "rgb(0, 0, 0)"){
+        document.getElementById('timeval30').style.width = "0px"
+        document.getElementById('timeval30').style.border = "0px solid white"
     }
     
     if (localStorage.length == 0){
