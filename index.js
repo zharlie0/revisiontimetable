@@ -21,6 +21,8 @@ let timer = time.getMinutes();
 const time2 = new Date();
 let hour = time2.getHours();
 
+const timevalss = [document.getElementById('timeval'), document.getElementById('timeval2'), document.getElementById('timeval3'), document.getElementById('timeval4'), document.getElementById('timeval5'), document.getElementById('timeval6'), document.getElementById('timeval7'), document.getElementById('timeval8'), document.getElementById('timeval9'), document.getElementById('timeval10'), document.getElementById('timeval11'), document.getElementById('timeval12'), document.getElementById('timeval13'), document.getElementById('timeval14'), document.getElementById('timeval15'), document.getElementById('timeval16'), document.getElementById('timeval17'), document.getElementById('timeval18'), document.getElementById('timeval19'), document.getElementById('timeval20'), document.getElementById('timeval21'), document.getElementById('timeval22'), document.getElementById('timeval23'), document.getElementById('timeval24'), document.getElementById('timeval25'), document.getElementById('timeval26'), document.getElementById('timeval27'), document.getElementById('timeval28'), document.getElementById('timeval29'), document.getElementById('timeval30')] 
+
 let counter = 1;
 
     function values(){
@@ -859,10 +861,17 @@ function perform(){
         document.getElementById('errors').textContent = "error: There are no events saved on this computer"
     }
 
-        let dayinpx = day * 55
+      
+
+    let dayinpx = day * 55  
+    
+    if (day == 0){
+            dayinpx = 385
+            console.log(dayinpx)
+     }
         document.getElementById('timep').style.backgroundColor = 'red';
         document.getElementById('timep').style.top = `${dayinpx + 210}px`
-    
+     
         let timevalue = timer * 1.125;
         hourinpx = (hour - 8) * 65
         document.getElementById('timep').style.left = `${timevalue + hourinpx + 68}px`
